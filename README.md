@@ -8,13 +8,19 @@ This repository lists address generation utilties written in typescript. It uses
 
 This utility generates HD Segwit address from mnemonic or seed and path value. It asks user to input choice (seed or mnemonic) followed by value(seed/mnemonic) and Path value. To learn more about HD wallets and mnemonics visit [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) and [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 
+![HD Segwit Address](screenshots/address.png?raw=true "Title")
+
 #### 2. Multisig Pay-To-Script-Hash(P2SH) Address Generator
 
 This utility generates n-out-of-m multisignature(multisig) pay-to-script-hash(P2SH) address from the inputs provided by user. It asks users for following values
+
     m : Number of participant accounts
     n : Number of signers required to spend
     public keys : Public keys of participants
+
 On providing correct input values, It processes user inputs and generates a redeem script (P2SH script) and P2SH address. To learn about P2SH follow this amazing [blog post](https://www.soroushjp.com/2014/12/20/bitcoin-multisig-the-hard-way-understanding-raw-multisignature-bitcoin-transactions/)
+
+![Multisig P2SH Address](screenshots/multisig.png?raw=true "Title")
 
 ## Installation
 ### Prerequisites
